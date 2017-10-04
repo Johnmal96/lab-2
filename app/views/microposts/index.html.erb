@@ -1,16 +1,21 @@
-<p id="notice"><%= notice %></p>
+        <nav class="w3-sidebar w3-bar-block w3-light-gray" style="width:15%">
+  <a href="https://toy-app-johnmal.c9users.io/" class="w3-bar-item w3-button w3-animate-left">Home</a> 
+  <a href="https://toy-app-johnmal.c9users.io/pages/about" class="w3-bar-item w3-button w3-animate-left">About</a> 
+  <a href="https://toy-app-johnmal.c9users.io/pages/help" class="w3-bar-item w3-button w3-animate-left">Help</a> 
+  <a href="https://toy-app-johnmal.c9users.io/microposts" class="w3-bar-item w3-button w3-animate-left">Microposts</a> 
+  <a href="https://toy-app-johnmal.c9users.io/users" class="w3-bar-item w3-button w3-animate-left">Users</a> 
+</nav><div class="w3-display-topright" style="width:80%"><p id="notice"><%= notice %></p>
 
 <h1>Microposts</h1>
 
-<table>
+<table class="w3-table-all">
   <thead>
-    <tr>
+    <tr class="w3-grey">
       <th>Content</th>
       <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @microposts.each do |micropost| %>
       <tr>
@@ -26,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Micropost', new_micropost_path %>
+<%= link_to 'New Micropost', new_micropost_path %></div>
