@@ -1,4 +1,7 @@
 class MicropostsController < ApplicationController
+
+  http_basic_authenticate_with name: "John", password: "Maliszewski"
+
   before_action :set_micropost, only: [:show, :edit, :update, :destroy]
 
   # GET /microposts
